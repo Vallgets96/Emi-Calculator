@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emi Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav>
+       <div class="logo">
+        <img src="./logo's/logo.png">
+       </div>
+        <ul class="nav-con1">
+            <li style="color: #bcbaba;">Pages</li>
+            <li><img src="./logo's/right-arrow.png"></li>
+            <li>Emi Calculator</li>
+        </ul>
+        <div class="nav-con2">
+            <li><img style="width: 17px; height:17px;" src="./logo's/question.png">Need Help</li>
+            <img src="./logo's/line.png">
+            <img style="width: 40px; height:40px;" src="./logo's/man.png">
+        </div>
+    </nav>
+    <main>
+        <div class="side-nav"></div>
+            <ul>
+                <li><img src="./logo's/dashboard.png">Dashboard</li>
+                <li class="li-side"><img src="./logo's/plus-minus (2).png">Emi Calc</li>
+                <li><img src="./logo's/invoice.png">Invoice Generator</li>
+            </ul>
+        </div>
+        <div class="main">
+        <div class="category">
+            <li>Home Loan</li>
+            <li style="color: grey;">Persnal Loan</li>
+        </div>
+        <div class="main-line">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+
+        <div class="head">
+            <div class="main-1">
+                <div class="whole-1">
+                    <div class="input-1">
+                        <h4>Loan Amount</h4>
+                        <div class="input-bar"><input id="loan-input-value" type="text" value="10000"><img src="./logo's/rupee.png"></div>
+                        <h6 >Enter a amount without any spaces</h6>
+                    </div>
+                    <div class="input-1">
+                        <h4>Intrest Rate</h4>
+                        <div class="input-bar"><input id="intrest-input-value" type="text" value="5"><img style="width: 10px; height: 10px;" src="./logo's/percentage.png"></div>
+                        <h6 >Eg 7.5%</h6>
+                    </div>
+                    
+                </div>
+                <div class="whole-2">
+                    <div class="input-1">
+                        <h4>Loan Tenure</h4>
+                        <div class="input-bar"><input id="tenure-input-value" type="text" value="2000"></div>
+                        <h6 >Enter a loan tenure in months / years</h6>
+                    </div>
+                    <div class="radio-m">
+                        <div class="radio"><input type="radio" value="year" name="frequency" id="year"><label for="year">Year</label></div>
+                        <div class="radio"><input type="radio" value="month" name="frequency" id="month" ><label for="month">Month</label></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button id="butn"><h4>Calculate</h4></button>
+                </div>
+        
+            </div>
+            <div class="main-2">
+                <div>
+                    <h5>Loan Emi</h5>
+                    <div class="main-sub"><img src="./logo's/rupee.png"><h3 id="loan-emi-value">24,000</h3></div>
+                </div>
+                <div>
+                    <h5>Total Intrest Payable</h5>
+                    <div class="main-sub"><img src="./logo's/rupee.png"><h3 id="total-intrest-value">1,33,000</h3></div>
+                </div>
+                <div>
+                    <h5>Total Payment (Principle + Intrest)</h5>
+                    <div class="main-sub"><img src="./logo's/rupee.png"><h3 id="total-emi-value">8,88,000</h3></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
